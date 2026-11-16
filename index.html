@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TOKO 60 - Toko Kelontong & Sembako Jalan Cinehel</title>
+  <meta name="description" content="Website Resmi TOKO 60 Jalan Cinehel No.60 RT 04 RW 04 Nagarasari. Sedia Gas LPG 3kg, Indomie, Kopi Kapal Api, Teh Pucuk, dan Plastik Kresek.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER & NAVBAR (RULE 8: #zidni_header) ==================== -->
+  <header id="zidni_header">
+    <div class="zidni_container">
+      <nav class="zidni_navbar">
+        <a href="#home" class="zidni_logo" onclick="zidniNavigate('home')">
+          <div class="zidni_logo_icon">60</div>
+          <div class="zidni_logo_text">
+            <h1>TOKO 60</h1>
+            <span>Jl. Cinehel No.60 Nagarasari</span>
+          </div>
+        </a>
+
+        <!-- 7 Menu Navigasi Sesuai Ketentuan Slide -->
+        <ul class="zidni_menu">
+          <li><a href="#home" class="zidni_menu_item active" data-page="home" onclick="zidniNavigate('home')">Beranda</a></li>
+          <li><a href="#about" class="zidni_menu_item" data-page="about" onclick="zidniNavigate('about')">Tentang Kami</a></li>
+          <li><a href="#catalog" class="zidni_menu_item" data-page="catalog" onclick="zidniNavigate('catalog')">Katalog Produk</a></li>
+          <li><a href="#promo" class="zidni_menu_item" data-page="promo" onclick="zidniNavigate('promo')">Paket Hemat</a></li>
+          <li><a href="#delivery" class="zidni_menu_item" data-page="delivery" onclick="zidniNavigate('delivery')">Layanan Antar</a></li>
+          <li><a href="#reviews" class="zidni_menu_item" data-page="reviews" onclick="zidniNavigate('reviews')">Ulasan</a></li>
+          <li><a href="#contact" class="zidni_menu_item" data-page="contact" onclick="zidniNavigate('contact')">Kontak</a></li>
+        </ul>
+
+        <div class="zidni_nav_actions">
+          <button class="zidni_cart_btn" onclick="zidniOpenCart()">
+            <span>Keranjang</span>
+            <span class="zidni_cart_badge" id="zidni_cart_count">0</span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==================== HALAMAN 1: BERANDA (#zidni_page_home) ==================== -->
+  <section id="zidni_page_home" class="zidni_page_section active">
+    <div class="zidni_container">
+      <!-- Hero Section -->
+      <div id="zidni_hero">
+        <div class="zidni_hero_content">
+          <span class="zidni_badge_pill">★ Toko Kelontong Pilihan Warga Sejak 2012</span>
+          <h2>Belanja Sembako Dekat & Cepat Sampai</h2>
+          <p>Sedia Gas LPG 3kg bersubsidi resmi, Indomie Mi Goreng, Kopi Kapal Api renceng, Teh Pucuk dingin, serta Kantong Plastik & Kresek tebal dengan timbangan jujur dan layanan antar ke rumah.</p>
+          <div class="zidni_hero_buttons">
+            <button class="zidni_btn_primary" onclick="zidniNavigate('catalog')">Lihat Katalog Produk →</button>
+            <a href="https://wa.me/6282295525153?text=Halo%20TOKO%2060%20Jalan%20Cinehel%2C%20saya%20mau%20pesan" target="_blank" class="zidni_btn_wa">Pesan via WA (0822-9552-5153)</a>
+          </div>
+        </div>
+        <div class="zidni_hero_image">
+          <img src="image/TOKO.jpeg" alt="Tampak Depan Toko 60 Jalan Cinehel">
+          <div class="zidni_hero_caption">
+            <strong>Foto Tampak Depan TOKO 60</strong> · Jl. Cinehel No. 60 RT 04 RW 04 Kelurahan Nagarasari
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 Pilar Keunggulan -->
+      <div class="zidni_pillars_grid">
+        <div class="zidni_pillar_card">
+          <div class="zidni_pillar_icon">⚖</div>
+          <div>
+            <h3>Timbangan Pas & Jujur</h3>
+            <p>Peralatan terkalibrasi pas hingga gram terkecil, hak pembeli selalu terjaga amanah.</p>
+          </div>
+        </div>
+        <div class="zidni_pillar_card">
+          <div class="zidni_pillar_icon">✓</div>
+          <div>
+            <h3>Produk Resmi Ber-BPOM</h3>
+            <p>Gas LPG 3kg bersegel resmi Pertamina, mie dan minuman original kualitas terjamin.</p>
+          </div>
+        </div>
+        <div class="zidni_pillar_card">
+          <div class="zidni_pillar_icon">🚚</div>
+          <div>
+            <h3>Layanan Antar Warga</h3>
+            <p>Gratis ongkir radius 2 km minimal belanja Rp 50.000, bayar di tempat (COD) praktis.</p>
+          </div>
+        </div>
+        <div class="zidni_pillar_card">
+          <div class="zidni_pillar_icon">⚡</div>
+          <div>
+            <h3>Respon Cepat via WA</h3>
+            <p>Hubungi 0822-9552-5153, pesanan langsung kami siapkan tanpa antre panjang.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produk Unggulan Beranda -->
+      <div class="zidni_section_header">
+        <span class="zidni_section_sub">Produk Favorit Harian</span>
+        <h2>Kebutuhan Pokok Selalu Siap Sedia</h2>
+        <p>Stok selalu segar setiap hari dengan harga eceran maupun kartonan ramah di kantong.</p>
+      </div>
+
+      <div class="zidni_products_grid" id="zidni_home_products_grid"></div>
+    </div>
+  </section>
+
+  <!-- ==================== HALAMAN 2: TENTANG KAMI (#zidni_page_about) ==================== -->
+  <section id="zidni_page_about" class="zidni_page_section">
+    <div class="zidni_container">
+      <div class="zidni_section_header">
+        <span class="zidni_section_sub">Halaman 2 · Profil Toko Kelontong</span>
+        <h2>Tentang TOKO 60</h2>
+        <p>Warung kelontong ramah tetangga yang tumbuh dan melayani masyarakat Jalan Cinehel, Kelurahan Nagarasari.</p>
+      </div>
+
+      <div style="background: white; border-radius: 1.25rem; border: 1px solid var(--zidni-border); padding: 2.5rem; margin-bottom: 2rem;">
+        <h3 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 1rem;">Visi & Misi TOKO 60</h3>
+        <p style="color: #57534e; margin-bottom: 1rem; line-height: 1.7;">
+          <strong>Visi:</strong> Menjadi toko kelontong berbasis komunitas yang paling dipercaya di Kelurahan Nagarasari dengan menghadirkan Gas LPG, makanan instan, minuman harian, dan plastik dengan pelayanan hangat dan kemudahan pemesanan WhatsApp.
+        </p>
+        <p style="color: #57534e; line-height: 1.7;">
+          <strong>Misi:</strong> Menjamin ketersediaan barang kebutuhan pokok setiap saat, menjaga stabilitas harga yang bersahabat bagi warga sekitar, dan memberikan kemudahan pengantaran langsung ke pintu rumah.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== HALAMAN 3: KATALOG PRODUK (#zidni_page_catalog) ==================== -->
+  <section id="zidni_page_catalog" class="zidni_page_section">
+    <div class="zidni_container">
+      <div class="zidni_section_header">
+        <span class="zidni_section_sub">Halaman 3 · Katalog Produk Pilihan</span>
+        <h2>Daftar Produk TOKO 60</h2>
+        <p>Pilih produk kebutuhan dapur Anda, klik tambah ke keranjang untuk memesan langsung.</p>
+      </div>
+
+      <div style="display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap; justify-content: space-between; align-items: center;">
+        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <button class="zidni_btn_primary zidni_filter_btn active" data-cat="all">Semua Produk</button>
+          <button class="zidni_btn_primary zidni_filter_btn" data-cat="gas">Gas LPG 3kg</button>
+          <button class="zidni_btn_primary zidni_filter_btn" data-cat="instan">Mi Instan</button>
+          <button class="zidni_btn_primary zidni_filter_btn" data-cat="minuman">Kopi & Teh</button>
+        </div>
+        <div>
+          <input type="text" id="zidni_search_input" class="zidni_form_control" placeholder="Cari gas, mie, kopi, kresek..." style="width: 250px;">
+        </div>
+      </div>
+
+      <div class="zidni_products_grid" id="zidni_catalog_grid"></div>
+    </div>
+  </section>
+
+  <!-- ==================== HALAMAN 4: PROMO & PAKET HEMAT (#zidni_page_promo) ==================== -->
+  <section id="zidni_page_promo" class="zidni_page_section">
+    <div class="zidni_container">
+      <div class="zidni_section_header">
+        <span class="zidni_section_sub">Halaman 4 · Paket Hemat Toko 60</span>
+        <h2>Paket Bundling Belanja Hemat</h2>
+        <p>Paket kombinasi hemat dengan potongan harga langsung siap diantar ke rumah.</p>
+      </div>
+
+      <div class="zidni_promo_grid">
+        <div class="zidni_promo_card popular">
+          <span class="zidni_badge_pill">★ Paling Favorit</span>
+          <h3 style="font-size: 1.25rem; font-weight: 800; margin: 0.5rem 0;">Paket Komplit Dapur Toko 60</h3>
+          <p style="font-size: 0.85rem; color: #78716c;">Solusi masak harian lengkap: Gas 3kg + Mie + Kopi seduh.</p>
+          <ul class="zidni_promo_items">
+            <li>✓ 1 Tabung Gas LPG 3 Kg Melon Pertamina</li>
+            <li>✓ 5 Bungkus Indomie Mi Goreng Spesial</li>
+            <li>✓ 1 Renteng Kopi Kapal Api Special Mix (10s)</li>
+            <li>✓ Bonus 1 Kantong Kresek JEEP 15</li>
+          </ul>
+          <div style="font-size: 1.5rem; font-weight: 900; margin: 1rem 0;">Rp 49.000 <span style="font-size: 0.85rem; color: #a8a29e; text-decoration: line-through;">Rp 55.500</span></div>
+          <button class="zidni_btn_primary" onclick="zidniAddToCart('prod-gas'); zidniAddToCart('prod-indomie'); zidniAddToCart('prod-kopi');">Pesan Paket Komplit</button>
+        </div>
+
+        <div class="zidni_promo_card">
+          <span class="zidni_badge_pill">Minuman Segar</span>
+          <h3 style="font-size: 1.25rem; font-weight: 800; margin: 0.5rem 0;">Paket Santai & Minuman</h3>
+          <p style="font-size: 0.85rem; color: #78716c;">Kombinasi mantap kopi sachet, teh pucuk, dan mi instan.</p>
+          <ul class="zidni_promo_items">
+            <li>✓ 1 Renteng Kopi Kapal Api (10 sachet)</li>
+            <li>✓ 3 Botol Teh Pucuk Harum 350 ml</li>
+            <li>✓ 3 Bungkus Indomie Mi Goreng</li>
+          </ul>
+          <div style="font-size: 1.5rem; font-weight: 900; margin: 1rem 0;">Rp 33.000 <span style="font-size: 0.85rem; color: #a8a29e; text-decoration: line-through;">Rp 37.500</span></div>
+          <button class="zidni_btn_primary" onclick="zidniAddToCart('prod-kopi'); zidniAddToCart('prod-teh'); zidniAddToCart('prod-indomie');">Pesan Paket Santai</button>
+        </div>
+
+        <div class="zidni_promo_card">
+          <span class="zidni_badge_pill">Kebutuhan Usaha</span>
+          <h3 style="font-size: 1.25rem; font-weight: 800; margin: 0.5rem 0;">Paket Plastik & Kresek</h3>
+          <p style="font-size: 0.85rem; color: #78716c;">Stok plastik bening dan kantong kresek tebal terjamin mutu.</p>
+          <ul class="zidni_promo_items">
+            <li>✓ 1 Pack Kresek JEEP 15 (±50 lembar)</li>
+            <li>✓ 1 Pack Plastik PIALA 12x25 (100 lembar)</li>
+          </ul>
+          <div style="font-size: 1.5rem; font-weight: 900; margin: 1rem 0;">Rp 15.000 <span style="font-size: 0.85rem; color: #a8a29e; text-decoration: line-through;">Rp 16.000</span></div>
+          <button class="zidni_btn_primary" onclick="zidniAddToCart('prod-kresek'); zidniAddToCart('prod-plastik');">Pesan Paket Plastik</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== HALAMAN 5: LAYANAN ANTAR (#zidni_page_delivery) ==================== -->
+  <section id="zidni_page_delivery" class="zidni_page_section">
+    <div class="zidni_container">
+      <div class="zidni_section_header">
+        <span class="zidni_section_sub">Halaman 5 · Ongkos Kirim & Radius</span>
+        <h2>Layanan Antar Warga TOKO 60</h2>
+        <p>Belanja tanpa repot keluar rumah, kurir toko langsung meluncur ke teras Anda.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+        <div style="background: white; padding: 2rem; border-radius: 1.25rem; border: 1px solid var(--zidni-border);">
+          <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 1rem;">Ketentuan Pengantaran</h3>
+          <ul style="list-style: none; line-height: 2; color: #57534e;">
+            <li>✓ <strong>Gratis Ongkir:</strong> Belanja minimal Rp 50.000 radius 2 km.</li>
+            <li>✓ <strong>Ongkir Standar:</strong> Rp 5.000 untuk radius di atas 2 km (maks 5 km).</li>
+            <li>✓ <strong>Waktu Kirim:</strong> Estimasi sampai 15 - 30 menit.</li>
+            <li>✓ <strong>Metode Pembayaran:</strong> Bayar di tempat (COD) saat barang sampai.</li>
+          </ul>
+        </div>
+        <div style="background: white; padding: 2rem; border-radius: 1.25rem; border: 1px solid var(--zidni-border);">
+          <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 1rem;">Alamat & Area Layanan</h3>
+          <p style="color: #57534e; line-height: 1.6; margin-bottom: 1rem;">
+            Pangkalan toko kami beralamat di <strong>Jalan Cinehel No. 60 RT 04 RW 04, Kelurahan Nagarasari, Tasikmalaya</strong>. Melayani seluruh wilayah Nagarasari, Cinehel, Cipedes, dan sekitarnya.
+          </p>
+          <a href="https://wa.me/6282295525153?text=Halo%20Toko%2060%2C%20apakah%20bisa%20antar%20ke%20alamat%20saya%3F" target="_blank" class="zidni_btn_wa">Tanya Jangkauan Alamat via WA</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== HALAMAN 6: ULASAN WARGA (#zidni_page_reviews) ==================== -->
+  <section id="zidni_page_reviews" class="zidni_page_section">
+    <div class="zidni_container">
+      <div class="zidni_section_header">
+        <span class="zidni_section_sub">Halaman 6 · Testimoni Tetangga</span>
+        <h2>Apa Kata Warga Sekitar?</h2>
+        <p>Kepuasan dan kepercayaan warga Jalan Cinehel adalah amanah utama TOKO 60.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;">
+        <div style="background: white; padding: 1.5rem; border-radius: 1.25rem; border: 1px solid var(--zidni-border);">
+          <div style="color: #f59e0b; margin-bottom: 0.5rem;">★★★★★</div>
+          <p style="font-size: 0.85rem; color: #57534e; line-height: 1.6; margin-bottom: 1rem;">
+            "Alhamdulillah langganan tukar gas 3kg di TOKO 60 cepat sekali diantar ke dapur, sekalian beli Indomie goreng dan plastik. Mantap!"
+          </p>
+          <strong>Ibu Ratna Susanti</strong>
+          <div style="font-size: 0.75rem; color: #78716c;">Warga RT 04 RW 04 Nagarasari</div>
+        </div>
+
+        <div style="background: white; padding: 1.5rem; border-radius: 1.25rem; border: 1px solid var(--zidni-border);">
+          <div style="color: #f59e0b; margin-bottom: 0.5rem;">★★★★★</div>
+          <p style="font-size: 0.85rem; color: #57534e; line-height: 1.6; margin-bottom: 1rem;">
+            "Toko kelontong paling komplit di Jalan Cinehel. Kopi Kapal Api dan Teh Pucuk selalu dingin, kresek JEEP 15 juga tebal."
+          </p>
+          <strong>Pak Bambang Haryono</strong>
+          <div style="font-size: 0.75rem; color: #78716c;">Warga Jalan Cinehel No. 58</div>
+        </div>
+
+        <div style="background: white; padding: 1.5rem; border-radius: 1.25rem; border: 1px solid var(--zidni-border);">
+          <div style="color: #f59e0b; margin-bottom: 0.5rem;">★★★★★</div>
+          <p style="font-size: 0.85rem; color: #57534e; line-height: 1.6; margin-bottom: 1rem;">
+            "Pelayanan sangat ramah, respon WA di 0822-9552-5153 gerak cepat. Sukses selalu untuk TOKO 60!"
+          </p>
+          <strong>Mbak Dwi Lestari</strong>
+          <div style="font-size: 0.75rem; color: #78716c;">Pelaku Usaha Nagarasari</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== HALAMAN 7: KONTAK PEMILIK TOKO (#zidni_page_contact) ==================== -->
+  <section id="zidni_page_contact" class="zidni_page_section">
+    <div class="zidni_container">
+      <div class="zidni_section_header">
+        <span class="zidni_section_sub">Halaman 7 · Kontak & Kirim Pesan</span>
+        <h2>Hubungi Pemilik TOKO 60</h2>
+        <p>Silakan isi formulir di bawah ini untuk mengirim pesan atau langsung chat WhatsApp pemilik toko.</p>
+      </div>
+
+      <div style="max-width: 600px; margin: 0 auto;">
+        <!-- Formulir Kontak Sesuai Aturan Slide (Rule 8: #zidni_contact_form) -->
+        <form id="zidni_contact_form">
+          <div class="zidni_form_group">
+            <label for="zidni_input_nama">Nama Lengkap</label>
+            <input type="text" id="zidni_input_nama" class="zidni_form_control" placeholder="Nama Anda..." required>
+          </div>
+          <div class="zidni_form_group">
+            <label for="zidni_input_hp">Nomor HP / WhatsApp</label>
+            <input type="tel" id="zidni_input_hp" class="zidni_form_control" placeholder="Contoh: 08123456789" required>
+          </div>
+          <div class="zidni_form_group">
+            <label for="zidni_input_pesan">Pesan / Permintaan Kebutuhan</label>
+            <textarea id="zidni_input_pesan" class="zidni_form_control" rows="4" placeholder="Tuliskan pesan Anda kepada pemilik toko (misal: Mau tanya stok gas LPG 3kg dan 2 dus Indomie)..." required></textarea>
+          </div>
+          <button type="submit" class="zidni_btn_primary" style="width: 100%; justify-content: center;">
+            Kirim Pesan ke Pemilik Toko (WhatsApp)
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== DRAWER KERANJANG BELANJA ==================== -->
+  <div class="zidni_backdrop" id="zidni_cart_backdrop" onclick="zidniCloseCart()"></div>
+  <aside id="zidni_cart_drawer">
+    <div class="zidni_drawer_header">
+      <h3 style="font-weight: 800; font-size: 1.1rem;">Keranjang Belanja</h3>
+      <button onclick="zidniCloseCart()" style="font-size: 1.5rem; line-height: 1;">&times;</button>
+    </div>
+    <div class="zidni_drawer_body" id="zidni_cart_items">
+      <!-- Diisi oleh script.js -->
+    </div>
+    <div class="zidni_drawer_footer">
+      <div style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 0.4rem;">
+        <span>Subtotal</span>
+        <strong id="zidni_cart_subtotal">Rp 0</strong>
+      </div>
+      <div style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 0.6rem;">
+        <span>Ongkir</span>
+        <strong id="zidni_cart_delivery">Rp 0</strong>
+      </div>
+      <div style="display: flex; justify-content: space-between; font-size: 1.1rem; font-weight: 800; border-top: 1px solid var(--zidni-border); padding-top: 0.6rem; margin-bottom: 1rem;">
+        <span>Total</span>
+        <strong id="zidni_cart_total" style="color: var(--zidni-primary);">Rp 0</strong>
+      </div>
+      <button class="zidni_btn_wa" style="width: 100%; justify-content: center;" onclick="zidniCheckoutWA()">
+        Checkout via WhatsApp (0822-9552-5153)
+      </button>
+    </div>
+  </aside>
+
+ 
+  <footer id="zidni_footer">
+    <div class="zidni_container">
+      <div class="zidni_footer_grid">
+        <div class="zidni_footer_col">
+          <h4>TOKO 60</h4>
+          <p style="font-size: 0.85rem; line-height: 1.6; color: #a8a29e; margin-bottom: 1rem;">
+            Toko kelontong sembako andalan warga Jalan Cinehel No. 60 RT 04 RW 04 Kelurahan Nagarasari. Sedia Gas LPG 3kg, Mi Indomie, Kopi Kapal Api, Teh Pucuk, dan Kantong Plastik berkualitas.
+          </p>
+          <div style="font-size: 0.8rem; color: #fbbf24;">
+            WhatsApp: 0822-9552-5153 
+            Buka Setiap Hari: 06.00 - 21.00 WIB
+          </div>
+        </div>
+
+        <div class="zidni_footer_col">
+          <h4>7 Menu Halaman</h4>
+          <ul class="zidni_footer_links">
+            <li><a href="#home" onclick="zidniNavigate('home')">1. Beranda Toko</a></li>
+            <li><a href="#about" onclick="zidniNavigate('about')">2. Profil Toko</a></li>
+            <li><a href="#catalog" onclick="zidniNavigate('catalog')">3. Katalog Produk</a></li>
+            <li><a href="#promo" onclick="zidniNavigate('promo')">4. Paket Hemat</a></li>
+            <li><a href="#delivery" onclick="zidniNavigate('delivery')">5. Layanan Antar</a></li>
+            <li><a href="#reviews" onclick="zidniNavigate('reviews')">6. Ulasan Warga</a></li>
+            <li><a href="#contact" onclick="zidniNavigate('contact')">7. Kontak Pemilik</a></li>
+          </ul>
+        </div>
+
+        <div class="zidni_footer_col">
+          <h4>Informasi Akademik</h4>
+          <p style="font-size: 0.85rem; line-height: 1.6; color: #a8a29e;">
+            Website ini dibuat menggunakan bahasa pemrograman <strong>HTML5, CSS, dan JavaScript (ES6)</strong> untuk memenuhi tugas Project UTS Pemrograman Web.
+          </p>
+          <div style="margin-top: 1rem; font-size: 0.8rem; color: #34d399;">
+            Mahasiswa: Mohamad Zidni Ilma<br>
+            Nim:2503010007<br>
+            </div>
+        </div>
+      </div>
+
+      <div class="zidni_footer_bottom">
+        <div>© 2026 TOKO 60. Hak Cipta Dilindungi.</div>
+        <div>Pemrograman Web: HTML · CSS · JavaScript</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT JAVASCRIPT ES6 INTERAKTIF -->
+  <script src="script.js"></script>
+</body>
+</html>
