@@ -25,7 +25,7 @@ const PRODUCTS = [
     category: 'gas',
     price: 22000,
     unit: 'tabung 3 kg',
-    image: 'image/GAS_6bb7e1f8.jpg',
+    image: 'GAS.jpg',
     badge: 'Segel Resmi',
     desc: 'Gas LPG 3kg bersubsidi resmi Pertamina segel utuh dan barcode aman.'
   },
@@ -35,7 +35,7 @@ const PRODUCTS = [
     category: 'instan',
     price: 3100,
     unit: 'bungkus 80 gr',
-    image: 'image/indomie.jpg',
+    image: 'indomie.jpg',
     badge: 'Paling Laris',
     desc: 'Mi instan goreng legendaris dengan bumbu gurih dan bawang goreng renyah.'
   },
@@ -45,7 +45,7 @@ const PRODUCTS = [
     category: 'minuman',
     price: 14500,
     unit: 'renteng (10 sachet)',
-    image: 'image/kopi.jpg',
+    image: 'kopi.jpg',
     badge: 'Favorit Pagi',
     desc: 'Kopi bubuk hitam mantap berpadu gula murni dalam sachet praktis.'
   },
@@ -55,7 +55,7 @@ const PRODUCTS = [
     category: 'minuman',
     price: 4000,
     unit: 'botol 350 ml',
-    image: 'image/PUCUK.jpg',
+    image: 'PUCUK.jpg',
     badge: 'Segar & Dingin',
     desc: 'Minuman teh melati segar asli dari pucuk daun teh pilihan.'
   },
